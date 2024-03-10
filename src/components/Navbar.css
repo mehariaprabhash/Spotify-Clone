@@ -1,0 +1,103 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    margin:5px 5px 0px 0px;
+    background-color:  #121212;
+    padding:13px 20px;
+  }
+  
+.leftitems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .leftitems .forward,.backward{
+    cursor: pointer;
+  }
+
+  .rightitems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 4px;
+  }
+  
+
+.navbar .item1{
+    border-radius: 99px;
+    background-color: white;
+    height: auto;
+    width:100%;
+    color: black;
+    padding: 4px 8px 4px 8px;
+    cursor:pointer;
+}
+
+.navbar .item2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px;
+    background-color: black;
+    width:100%;
+}
+
+.navbar .item2 .subitem1{
+    height: auto;
+    width:auto;
+    padding: 4px 0px 4px 8px;
+    cursor:pointer;
+}
+
+.navbar .item2 .subitem2{
+    color:white;
+    height: auto;
+    width:auto;
+    padding: 4px 8px 4px 4px;
+    cursor:pointer;
+}
+
+.navbar .item3{
+    cursor:pointer;
+}
+
+.navbar .item4{
+    cursor:pointer;
+}
+
+.rightitems .item1:hover,
+.rightitems .item2:hover,
+.rightitems .item3:hover,
+.rightitems .item4:hover {
+  transform: scale(1.03); 
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+
+.navbar input{
+  border: 1px solid #202020;
+  background-color: #202020;
+  padding: 5px 10px;
+  height:30px;
+  width:150%;
+  border-radius: 99px;
+  font-size: 15px;
+  color:white;
+}

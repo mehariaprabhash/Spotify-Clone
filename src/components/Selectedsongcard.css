@@ -1,0 +1,52 @@
+.selectedsongcard{
+    display:flex;
+    flex-direction:row;
+    color:white;
+    gap:10px;
+    align-items: center;
+    /* background-color: #121212; */
+    background-color: #000000;
+    padding: 5px ;
+    height: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 8px;
+    cursor:pointer;
+    /* transition: 0.3s ease-in-out;
+    &:hover{
+        background-color:rgb(44, 37, 37);
+    } */
+    border:none;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+}
+
+.selectedsongcard .cardicon{
+    background-color: rgb(37, 35, 35);
+    height:60px;
+    width:60px;
+    border-radius: 10px;
+}
+.selectedsongcard .cardicon img{
+    background-color: rgb(37, 35, 35);
+    height:60px;
+    width:60px;
+    border-radius: 10px;
+}
+
+
+.selectedsongcard .carddetail{
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+    justify-content: center;
+    /* align-items: center; */
+}
+.selectedsongcard .carddetail .title{
+    color:white;
+}
+
+.selectedsongcard .carddetail .singer{
+    color:rgb(128,128,128);
+}

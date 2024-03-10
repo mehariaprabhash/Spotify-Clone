@@ -1,0 +1,17 @@
+.playercontrol{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous,.next,.state{
+    font-size: 2rem;
+}
+
+.playercontrol .shuffle:hover,.previous:hover ,.state:hover ,.next:hover,.repeat:hover{
+    transform: scale(1.1); 
+    cursor: pointer;
+    transition: transform 0.2s;
+  }

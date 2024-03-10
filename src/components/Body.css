@@ -1,0 +1,59 @@
+.mainbody {
+    flex: 1;
+    background-color: #121212;
+    overflow: auto;
+    color: white;
+    padding: 0px 10px 5px 10px;
+}
+
+.mainbody .playlist-header {
+    display: grid;
+    grid-template-columns: 0.5fr 3.8fr 3.2fr 1fr 0.5fr 1fr;
+    background-color: #181818;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 2px solid #303030;
+    color: rgb(128, 128, 128);
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+.mainbody .playlist-metadata {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background: linear-gradient(orange, rgba(255, 166, 0, 0.651));
+    /* background: linear-gradient(transparent 0,rgba(0,0,0,.5) 100%),var(--background-noise); */
+    position: relative;
+
+}
+
+.mainbody .playlist-metadata .playlistimage img {
+    height: 175px;
+    width: 175px;
+}
+
+.mainbody .playlist-metadata .playlistname span {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.mainbody::-webkit-scrollbar {
+    background-color: #121212;
+    width:10px;
+}
+
+/* Define the scrollbar thumb */
+.mainbody::-webkit-scrollbar-thumb {
+    background: rgb(88, 86, 86);
+    cursor: pointer;
+}
+
+.mainbody::-webkit-scrollbar-thumb:hover {
+    background: #e6dbdb;
+}

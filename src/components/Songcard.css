@@ -1,0 +1,86 @@
+.songcard {
+    display: grid;
+    grid-template-columns: 0.5fr 3.8fr 3.2fr 1fr 0.5fr 1fr;
+    height: 50px;
+    justify-content: flex-start;
+    background-color: #121212;
+    align-items: center;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        background-color: rgb(57, 54, 54);
+        color: white;
+    }
+
+    font-size: 15px;
+    color: rgb(128, 128, 128);
+    border-radius: 5px;
+}
+
+.songcard .title {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.songcard .title .titledetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.songcard .title .titledetail .name span{
+    font-size: 17px;
+    color:white;
+}
+.songcard img {
+    height: 50px;
+    width: 50px;
+}
+
+.songcard .preview a {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+}
+
+.audio-player {
+    display: flex;
+    align-items: center;
+}
+
+.play,.pause{
+    background-color: #1DB954;
+    color:white;
+}
+
+.play-button {
+    background-color: #1DB954;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    height:40px;
+    width:40px;
+    /* padding: 10px 15px; */
+    margin-right: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.audio-element {
+    /* width: 100%; */
+    display: none;
+}
+
+.play-button .play i{
+    color:black;
+}
+
+/* .play-button .pause i{
+    color:black;
+} */
+
+.fa-solid{
+   color: black;
+}

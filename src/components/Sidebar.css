@@ -1,0 +1,98 @@
+.sidebar{
+    background-color:  #000000;
+    width:20vw;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    /* grid-template-rows: 15fr 85fr; */
+    /* overflow: hidden; */
+}
+.sidebar .upper{
+    flex:0 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    margin:5px 5px 0px 5px;
+    background-color:  #121212;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:20px;
+    color: rgb(128, 128, 128);
+
+}
+
+ul li{
+    list-style-type: none;
+    display: flex;
+    color: rgb(128, 128, 128);
+    flex-direction: row;
+    gap: 20px;
+    cursor:pointer;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        color:white;
+    }
+}
+ul li span{
+    margin-right: 10px;
+}
+
+.sidebar .lower{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    margin:5px 5px 5px 5px;
+    background-color:  #121212;
+    max-height: 80vh; /* Set a max height for the lower section */
+    overflow: hidden;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+    
+}
+.buttons button{
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: rgb(37, 35, 35);
+    border:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor:pointer;
+    &:hover{
+        transform: scale(1.03); 
+        transition: transform 0.2s;
+    }
+}
+
+.lower .lowerdynamic{
+    flex:1;
+    overflow: auto;
+}
+
+.lower .lowerdynamic::-webkit-scrollbar {
+    background-color: #121212;
+    width:10px;
+}
+
+/* Define the scrollbar thumb */
+.lower .lowerdynamic::-webkit-scrollbar-thumb {
+    background: rgb(88, 86, 86);
+    cursor: pointer;
+}
+
+.lower .lowerdynamic::-webkit-scrollbar-thumb:hover {
+    background: #e6dbdb;
+}
+
+

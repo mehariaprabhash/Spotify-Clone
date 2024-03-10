@@ -1,0 +1,24 @@
+.footerright{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    justify-content: flex-left;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/* input{
+    width:15rem;
+    height:0.5rem;
+    border-radius:2rem;
+    color: #202020;
+} */
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15rem;
+    height: 0.5rem;
+    border-radius: 2rem;
+}
+  
